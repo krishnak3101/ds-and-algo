@@ -1,10 +1,11 @@
 # implementing circular ll
 # inserting many elements in circular_ll
 # print the elements
-# length of circular_list
+# length or no_of_nodes of circular_list
 # insertion at beginning,last and at a given position
 # split into halves
 # sorted insert for a circular linked list
+# check if a ll is circular
 
 
 class node:
@@ -101,7 +102,7 @@ class circular_ll:
         l = self.length()
         if l == 0 or l == 1:
             print('splitting not possible')
-            return None,None
+            return None, None
 
         temp = self.head
 
@@ -116,8 +117,7 @@ class circular_ll:
         temp.next = self.head
         return self.head, head2
 
-
-    def sorted_insert(self,data):
+    def sorted_insert(self, data):
         if self.head is None:
             self.head = node(data)
             self.head.next = self.head
@@ -133,7 +133,7 @@ class circular_ll:
             return
 
         temp = self.head
-        while(temp.data <= data):
+        while (temp.data <= data):
             prev = temp
             temp = temp.next
 
@@ -143,12 +143,31 @@ class circular_ll:
         n = None
 
 
+    def delete_node(self,idx):
+        if idx <0 or idx > self.length()-1:
+            print('invalid index')
+            return
+        if idx == 0:
+            self.tail.next = self.head.next
+            self.head = self.head.next
+            return
+
+        temp = self.head
+        i = 0
+        while(i != idx):
+            i += 1
+            prev = temp
+            temp = temp.next
+
+        prev.next = temp.next
+        temp =None
+
 
 
 
 
 l = circular_ll()
-#l.insert_many("")
+# l.insert_many("")
 l.print(l.head)
 # print(l.length())
 
@@ -159,7 +178,7 @@ l.print(l.head)
 # l.insert_at_pos(2, 1)
 # l.print(l.head)
 
-#split_int_2
+# split_int_2
 # h1, h2 = l.split_into_2()
 # l.print(h1)
 # l.print(h2)
@@ -174,6 +193,36 @@ l.print(l.head)
 # l.sorted_insert(789321)
 
 
+# l.print(l.head)
+
+
+# checking if circular
+# str = "4 7 8 9 5 2 1 4"
+# l2 = circular_ll()
+#
+# l2.insert_many(str)
+#
+#
+# def check_if_circular(l):
+#     temp = l.head.next
+#     while (temp is not None and temp.next is not l.head):
+#         temp = temp.next
+#     if temp is not None:
+#         print("circular")
+#     else:
+#         print("not circular")
+# check_if_circular(l2)
+
+
+l = circular_ll()
+l.insert_many("4 8 9 7 2 5 4")
+l.delete_node(0)
+l.print(l.head)
+
+l.delete_node(5)
+l.print(l.head)
+
+l.delete_node(6)
 l.print(l.head)
 
 

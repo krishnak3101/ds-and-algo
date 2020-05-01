@@ -6,7 +6,6 @@
 # deleting the entire ll
 # finding length iterative and recursive
 
-
 class node:
     def __init__(self,data):
         self.data = data
