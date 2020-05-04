@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e481593-34cd-45ce-b2d0-013df4bd0a97" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ds/linked_list/circular_ll/josephus_circle.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ds/linked_list/double_ll/d_ll_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ds/stacks/2stacks_in_an_array.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ds/stacks/queue_with_2stacks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ds/stacks/special_stack.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ds/stacks/stacks_using_lists.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ds/stacks/stacks_using_ll.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ds/linked_list/circular_ll/josephus circle.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
